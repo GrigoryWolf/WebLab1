@@ -14,14 +14,14 @@
                 $hit = "true";
             }
             $end = round(microtime(true) -  $_SERVER["REQUEST_TIME_FLOAT"], 5);
-            $answer = sprintf("<tr>
-        <td>%s</td>
-        <td>%s</td>
-        <td>%s</td>
-        <td>%s</td>
-        <td>%s</td>
-        <td>%d</td>
-    </tr>", $x, $y, $r, $current_time, $end, $hit);
+            $answer = "<tr>
+        <td>" . $x . "</td>
+        <td>" . $y . "</td>
+        <td>" . $r . "</td>
+        <td>" . $current_time . "</td>
+        <td>" . $end . "</td>
+        <td>" . $hit . "</td>
+    </tr>";
             echo $answer;
         }
     }

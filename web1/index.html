@@ -6,7 +6,7 @@
     <title>Web Labwork 1</title>
 </head>
 <body>
-<header><p>Volkov Grigory, P3232</p><p>Var 1302</p></header>
+<header>Volkov Grigory, P3232<br>Var 1302</header>
 <section>
 <div id = "table-wrapper">
     <p>HISTORY TABLE</p>
@@ -22,13 +22,13 @@
     </table>
 </div>
 <div id = "image-wrapper">
-    <iframe src="https://www.desmos.com/calculator/qs2vxv2gne?embed" width="200" height="200" style="border: 1px solid #ccc" frameborder=0></iframe>
+    <iframe id="image" src="files/desmos-graph(4).png" width="320" height="320" style="border: 1px solid #ccc" ></iframe>
 </div>
 <div id="input-wrapper">
     <form id="input-form" method="post" action = "php/main.php">
-        <label>Изменение X:</label>
+        <p id="x-p">Изменение X:</p>
         <input type="text" id="x-input" name="x" placeholder="-5...3"><br>
-        <p>Изменение Y:</p>
+        <p id="y-p">Изменение Y:</p>
         <label>
             <span>-5</span>
             <input type="radio" name ="y" class = "y-input" value="-5">
@@ -66,7 +66,7 @@
             <input type="radio" name ="y" value="3">
         </label>
         <br>
-        <label>Изменение R:</label>
+        <p id="r-p">Изменение R:</p>
         <select id="r-input" name="r">
             <option value="1">1</option>
             <option value="1.5">1.5</option>
@@ -79,8 +79,8 @@
     </form>
 </div>
 </section>
-<script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 <script src="js/sender.js"></script>
+<script src="js/validate.js"></script>
 <script src="js/addToTable.js"></script>
 </body>
 </html>
